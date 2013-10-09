@@ -8,9 +8,19 @@ module.exports = function (server) {
      * @param {Object} req the HTTP request object
      * @param {Object} res the HTTP response object
      */
-    server.get('/', function (req, res) {
-        var model = {title: 'Hello, world'};
-        model.recipient = Person.create('world');
-        res.render('index', model);
+     server.get('/', function (req, res) {
+        res.redirect('/landing');
+    });
+    server.get('/contact', function (req, res) {
+        var model = {viewName: 'contact'};
+        res.render('contact', model);
+    });
+     server.get('/about', function (req, res) {
+        var model = {viewName: 'about'};
+        res.render('about', model);
+    });
+     server.get('/landing', function (req, res) {
+        var model = {viewName: 'landing'};
+        res.render('landing', model);
     });
 };

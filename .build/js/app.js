@@ -1,4 +1,4 @@
-define(['nougat', 'jquery', 'BaseView'], function(nougat, $, BaseView) {
+define(['nougat', 'jquery', 'BaseView, Bootstrap'], function(nougat, $, BaseView) {
 
 	'use strict';
 

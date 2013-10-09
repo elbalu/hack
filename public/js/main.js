@@ -21,7 +21,8 @@
 			"backbone": "lib/backbone-0.9.2",
 			"dust": "lib/dust-core-1.0.0",
 			"nougat": "core/nougat",
-			"BaseView": "core/baseView"
+			"BaseView": "core/baseView",
+			"Bootstrap": 'lib/bootstrap'
 		},
 		useStrict: true,
 		shim: {
