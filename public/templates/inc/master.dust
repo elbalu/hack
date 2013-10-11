@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
     <title>{title}</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="assets/css/docs.css" />
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <div id="wrap">
     {>"inc/header" /}
-    <div id="wrapper">
-
-        <div id="contents">
+    
             {>"{_main}"/}
-            
-        </div>
-
-    </div>
+       
     {>"inc/footer" /}
+    <div>
     <script data-main="js/main" src="js/lib/require-2.0.1.js"></script>
+    <script  src="assets/js/holder.js"></script>
+
 </body>
 </html>

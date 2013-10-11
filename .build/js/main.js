@@ -22,7 +22,7 @@
 			"dust": "lib/dust-core-1.0.0",
 			"nougat": "core/nougat",
 			"BaseView": "core/baseView",
-			"Bootstrap": 'bootstrap/bootstrap'
+			"Bootstrap": 'lib/bootstrap'
 		},
 		useStrict: true,
 		shim: {
