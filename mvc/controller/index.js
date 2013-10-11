@@ -9,7 +9,8 @@ module.exports = function (server) {
      * @param {Object} res the HTTP response object
      */
      server.get('/', function (req, res) {
-        res.redirect('/landing');
+        var model = {viewName: 'index'};
+        res.render('index', model);
     });
     server.get('/contact', function (req, res) {
         var model = {viewName: 'contact'};

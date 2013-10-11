@@ -22,7 +22,7 @@
 			"dust": "lib/dust-core-1.0.0",
 			"nougat": "core/nougat",
 			"BaseView": "core/baseView",
-			"Bootstrap": 'lib/bootstrap'
+			"Bootstrap": 'bootstrap/bootstrap'
 		},
 		useStrict: true,
 		shim: {
@@ -72,10 +72,10 @@
 		require.config(config);
 		if (config.paths.json !== "empty:") {
 			require(["json"], function() {
-				require(["app"]);
+				require(["views/app"]);
 			});
 		} else {
-			require(["app"]);
+			require(["views/app"]);
 		}
 	}
 

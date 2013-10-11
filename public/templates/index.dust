@@ -1,4 +1,2 @@
-<div class="greeting">
-    Hello, {recipient.fullName}!
-    <a href="/contact">Contact</a>
-</div>
+{>"inc/carousel" /}
+{>"inc/marketing" /}
